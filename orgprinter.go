@@ -11,19 +11,51 @@ import (
 	"google.golang.org/grpc"
 
 	pbg "github.com/brotherlogic/goserver/proto"
+	ppb "github.com/brotherlogic/printer/proto"
+	rcpb "github.com/brotherlogic/recordcollection/proto"
+	ropb "github.com/brotherlogic/recordsorganiser/proto"
 )
+
+type org interface {
+	listLocations(ctx context.Context) ([]*ropb.Location, error)
+	listLocation(ctx context.Context, location string) (*ropb.Location, error)
+	getRecord(ctx context.Context, iid int32) (*rcpb.Record, error)
+}
+
+type porg struct{}
 
 //Server main server type
 type Server struct {
 	*goserver.GoServer
+	org       org
+	runprint  bool
+	lastprint []string
 }
 
 // Init builds the server
 func Init() *Server {
 	s := &Server{
 		GoServer: &goserver.GoServer{},
+		runprint: true,
 	}
 	return s
+}
+
+func (s *Server) print(ctx context.Context, lines []string) error {
+	if !s.runprint {
+		s.lastprint = lines
+		return nil
+	}
+
+	conn, err := s.FDialServer(ctx, "printer")
+	if err != nil {
+		return err
+	}
+	defer conn.Close()
+
+	printer := ppb.NewPrintServiceClient(conn)
+	_, err = printer.Print(ctx, &ppb.PrintRequest{Lines: lines, Origin: "orgprinter"})
+	return err
 }
 
 // DoRegister does RPC registration
