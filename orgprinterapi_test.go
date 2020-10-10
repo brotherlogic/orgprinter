@@ -69,11 +69,6 @@ func (t *testOrg) getRecord(ctx context.Context, iid int32) (*rcpb.Record, error
 		return &rcpb.Record{
 			Release: &gdpb.Release{
 				Title: "Last",
-				Artists: []*gdpb.Artist{
-					&gdpb.Artist{
-						Name: "Artist",
-					},
-				},
 			},
 		}, nil
 	}
@@ -107,7 +102,7 @@ func TestIntegration(t *testing.T) {
 	if s.lastprint[0] != "Records" ||
 		s.lastprint[1] != " Slot 1:" ||
 		s.lastprint[2] != "  Artist - First" ||
-		s.lastprint[3] != "  Artist - Last" {
+		s.lastprint[3] != "  Unknown - Last" {
 		t.Errorf("Bad print request: %v", s.lastprint)
 	}
 }
