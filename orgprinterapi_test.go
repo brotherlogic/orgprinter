@@ -100,7 +100,7 @@ func TestIntegration(t *testing.T) {
 		t.Fatalf("Unable to run basic process: %v", err)
 	}
 
-	if len(s.lastprint) != 7 {
+	if len(s.lastprint) != 8 {
 		t.Fatalf("Not the right number of lines: %v", len(s.lastprint))
 	}
 
