@@ -19,7 +19,7 @@ func (s *Server) runOrgPrint(ctx context.Context) error {
 				return err
 			}
 			lines := []string{org.GetName()}
-			for slot := int32(0); slot < org.GetSlots(); slot++ {
+			for slot := int32(0); slot <= org.GetSlots(); slot++ {
 				lines = append(lines, fmt.Sprintf(" Slot %v:", slot+1))
 
 				lowest := int32(9999999)
@@ -40,17 +40,22 @@ func (s *Server) runOrgPrint(ctx context.Context) error {
 					}
 				}
 
-				rec, err := s.org.getRecord(ctx, lowiid)
-				if err != nil {
-					return err
+				if lowiid > 0 {
+					rec, err := s.org.getRecord(ctx, lowiid)
+					if err != nil {
+						return err
+					}
+					lines = append(lines, fmt.Sprintf("  %v - %v", rec.GetRelease().GetArtists()[0].GetName(), rec.GetRelease().GetTitle()))
 				}
-				lines = append(lines, fmt.Sprintf("  %v - %v", rec.GetRelease().GetArtists()[0].GetName(), rec.GetRelease().GetTitle()))
 
-				rec, err = s.org.getRecord(ctx, highiid)
-				if err != nil {
-					return err
+				if highiid > 0 {
+					rec, err := s.org.getRecord(ctx, highiid)
+					if err != nil {
+						return err
+					}
+
+					lines = append(lines, fmt.Sprintf("  %v - %v", rec.GetRelease().GetArtists()[0].GetName(), rec.GetRelease().GetTitle()))
 				}
-				lines = append(lines, fmt.Sprintf("  %v - %v", rec.GetRelease().GetArtists()[0].GetName(), rec.GetRelease().GetTitle()))
 			}
 
 			s.print(ctx, lines)
