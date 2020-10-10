@@ -14,6 +14,7 @@ import (
 	ppb "github.com/brotherlogic/printer/proto"
 	rcpb "github.com/brotherlogic/recordcollection/proto"
 	ropb "github.com/brotherlogic/recordsorganiser/proto"
+	rpb "github.com/brotherlogic/reminders/proto"
 )
 
 type org interface {
@@ -108,7 +109,7 @@ func (s *Server) print(ctx context.Context, lines []string) error {
 
 // DoRegister does RPC registration
 func (s *Server) DoRegister(server *grpc.Server) {
-
+	rpb.RegisterReminderReceiverServer(server, s)
 }
 
 // ReportHealth alerts if we're not healthy
