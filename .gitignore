@@ -4,3 +4,5 @@ orgprinter
 
 testing
 *.backup
+
+cli/cli
