@@ -22,7 +22,54 @@ type org interface {
 	getRecord(ctx context.Context, iid int32) (*rcpb.Record, error)
 }
 
-type porg struct{}
+type porg struct {
+	dial func(ctx context.Context, server string) (*grpc.ClientConn, error)
+}
+
+func (p *porg) listLocations(ctx context.Context) ([]*ropb.Location, error) {
+	conn, err := p.dial(ctx, "recordsorganiser")
+	if err != nil {
+		return nil, err
+	}
+	defer conn.Close()
+
+	org := ropb.NewOrganiserServiceClient(conn)
+	resp, err := org.GetOrganisation(ctx, &ropb.GetOrganisationRequest{})
+	if err != nil {
+		return nil, err
+	}
+	return resp.GetLocations(), err
+}
+
+func (p *porg) listLocation(ctx context.Context, location string) (*ropb.Location, error) {
+	conn, err := p.dial(ctx, "recordsorganiser")
+	if err != nil {
+		return nil, err
+	}
+	defer conn.Close()
+
+	org := ropb.NewOrganiserServiceClient(conn)
+	resp, err := org.GetOrganisation(ctx, &ropb.GetOrganisationRequest{ForceReorg: true, Locations: []*ropb.Location{&ropb.Location{Name: location}}})
+	if err != nil {
+		return nil, err
+	}
+	return resp.GetLocations()[0], err
+}
+
+func (p *porg) getRecord(ctx context.Context, iid int32) (*rcpb.Record, error) {
+	conn, err := p.dial(ctx, "recordcollection")
+	if err != nil {
+		return nil, err
+	}
+	defer conn.Close()
+
+	coll := rcpb.NewRecordCollectionServiceClient(conn)
+	resp, err := coll.GetRecord(ctx, &rcpb.GetRecordRequest{InstanceId: iid})
+	if err != nil {
+		return nil, err
+	}
+	return resp.GetRecord(), err
+}
 
 //Server main server type
 type Server struct {
@@ -38,6 +85,7 @@ func Init() *Server {
 		GoServer: &goserver.GoServer{},
 		runprint: true,
 	}
+	s.org = &porg{dial: s.FDialServer}
 	return s
 }
 
