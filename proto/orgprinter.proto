@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+package orgprinter;
+
+option go_package = "github.com/brotherlogic/orgprinter/proto";
+
