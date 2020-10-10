@@ -4,7 +4,16 @@ import (
 	"fmt"
 
 	"golang.org/x/net/context"
+
+	rcpb "github.com/brotherlogic/recordcollection/proto"
 )
+
+func getLine(rec *rcpb.Record) string {
+	if len(rec.GetRelease().GetArtists()) > 0 {
+		return fmt.Sprintf("  %v - %v", rec.GetRelease().GetArtists()[0].GetName(), rec.GetRelease().GetTitle())
+	}
+	return fmt.Sprintf("  %v - %v", "Unknown", rec.GetRelease().GetTitle())
+}
 
 func (s *Server) runOrgPrint(ctx context.Context) error {
 	orgs, err := s.org.listLocations(ctx)
@@ -45,7 +54,7 @@ func (s *Server) runOrgPrint(ctx context.Context) error {
 					if err != nil {
 						return err
 					}
-					lines = append(lines, fmt.Sprintf("  %v - %v", rec.GetRelease().GetArtists()[0].GetName(), rec.GetRelease().GetTitle()))
+					lines = append(lines, getLine(rec))
 				}
 
 				if highiid > 0 {
@@ -54,7 +63,7 @@ func (s *Server) runOrgPrint(ctx context.Context) error {
 						return err
 					}
 
-					lines = append(lines, fmt.Sprintf("  %v - %v", rec.GetRelease().GetArtists()[0].GetName(), rec.GetRelease().GetTitle()))
+					lines = append(lines, getLine(rec))
 				}
 			}
 
