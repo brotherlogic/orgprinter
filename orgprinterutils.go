@@ -6,6 +6,7 @@ import (
 	"golang.org/x/net/context"
 
 	rcpb "github.com/brotherlogic/recordcollection/proto"
+	ropb "github.com/brotherlogic/recordsorganiser/proto"
 )
 
 func getLine(rec *rcpb.Record) string {
@@ -22,7 +23,7 @@ func (s *Server) runOrgPrint(ctx context.Context) error {
 	}
 
 	for _, org := range orgs {
-		if org.GetSlots() > 1 {
+		if org.GetSlots() > 1 && org.GetInPlay() == ropb.Location_IN_PLAY {
 			pieces, err := s.org.listLocation(ctx, org.GetName())
 			if err != nil {
 				return err
