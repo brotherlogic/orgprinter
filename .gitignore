@@ -5,4 +5,4 @@ orgprinter
 testing
 *.backup
 
-cli/cli
+orgprinter_cli/cli
