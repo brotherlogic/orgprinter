@@ -3,17 +3,16 @@ module github.com/brotherlogic/orgprinter
 go 1.16
 
 require (
-	github.com/brotherlogic/githubcard v0.0.0-20220524203137-762053d6cada // indirect
-	github.com/brotherlogic/godiscogs v0.0.0-20220523152004-1a5f78dd88d3
-	github.com/brotherlogic/goserver v0.0.0-20220520152650-218b04adea34
-	github.com/brotherlogic/logging v0.0.0-20220523224134-7ad8c7b4a95b // indirect
-	github.com/brotherlogic/printer v0.0.0-20220520151540-95ce9cbccd59
-	github.com/brotherlogic/recordcollection v0.0.0-20220523152032-8bbc7e07eba1
-	github.com/brotherlogic/recordsorganiser v0.0.0-20220524182442-2e5c954b5aef
-	github.com/brotherlogic/reminders v0.0.0-20220510235903-43ecb3a11e4c
+	github.com/brotherlogic/buildserver v0.0.0-20220807185430-1a3c24e9bdab // indirect
+	github.com/brotherlogic/dstore v0.0.0-20220807173639-a34461ba0418 // indirect
+	github.com/brotherlogic/godiscogs v0.0.0-20220722012105-93cf4f2124d9
+	github.com/brotherlogic/goserver v0.0.0-20220802151516-4b60a60b3020
+	github.com/brotherlogic/printer v0.0.0-20220710160631-dfeca21f3979
+	github.com/brotherlogic/recordcollection v0.0.0-20220805153136-807a2c0e0cdf
+	github.com/brotherlogic/recordsorganiser v0.0.0-20220727164417-68d00f81fe3b
+	github.com/brotherlogic/reminders v0.0.0-20220610004056-6e604a42d682
 	github.com/golang/protobuf v1.5.2
-	golang.org/x/net v0.0.0-20220524220425-1d687d428aca
-	google.golang.org/genproto v0.0.0-20220524164028-0aa58a9287dd // indirect
-	google.golang.org/grpc v1.46.2
-	google.golang.org/protobuf v1.28.0
+	golang.org/x/net v0.0.0-20220805013720-a33c5aa5df48
+	google.golang.org/grpc v1.48.0
+	google.golang.org/protobuf v1.28.1
 )
