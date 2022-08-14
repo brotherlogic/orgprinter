@@ -9,6 +9,33 @@ import (
 	ropb "github.com/brotherlogic/recordsorganiser/proto"
 )
 
+func (s *Server) runSalePrint(ctx context.Context) error {
+	conn, err := s.FDialServer(ctx, "recordcollection")
+	if err != nil {
+		return err
+	}
+	defer conn.Close()
+
+	client := rcpb.NewRecordCollectionServiceClient(conn)
+	sales, err := client.GetInventory(ctx, &rcpb.GetInventoryRequest{})
+	if err != nil {
+		return err
+	}
+
+	lines := []string{"For Sale:"}
+	for _, sale := range sales.GetItems() {
+		if sale.GetSalePrice() <= 5 {
+			lines = append(lines, fmt.Sprintf("%v.", sale.GetId()))
+		}
+	}
+
+	if len(lines) > 1 {
+		s.print(ctx, lines)
+	}
+
+	return nil
+}
+
 func getLine(rec *rcpb.Record) string {
 	if len(rec.GetRelease().GetArtists()) > 0 {
 		return fmt.Sprintf("  %v - %v", rec.GetRelease().GetArtists()[0].GetName(), rec.GetRelease().GetTitle())

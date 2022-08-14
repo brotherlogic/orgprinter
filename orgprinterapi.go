@@ -9,5 +9,12 @@ import (
 // Receive a request ot update
 func (s *Server) Receive(ctx context.Context, req *rpb.ReceiveRequest) (*rpb.ReceiveResponse, error) {
 	err := s.runOrgPrint(ctx)
-	return &rpb.ReceiveResponse{}, err
+	err2 := s.runSalePrint(ctx)
+	if err != nil {
+		return &rpb.ReceiveResponse{}, err
+	} else if err2 != nil {
+		return &rpb.ReceiveResponse{}, err2
+	}
+
+	return &rpb.ReceiveResponse{}, nil
 }
