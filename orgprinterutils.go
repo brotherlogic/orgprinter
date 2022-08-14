@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 
 	"golang.org/x/net/context"
 
@@ -24,12 +25,15 @@ func (s *Server) runSalePrint(ctx context.Context) error {
 
 	lines := []string{"For Sale:"}
 	for _, sale := range sales.GetItems() {
-		if sale.GetSalePrice() <= 5 {
-			records, err := client.QueryRecords(ctx, &rcpb.QueryRecordsRequest{Query: &rcpb.QueryRecordsRequest_ReleaseId{sale.GetId()}})
-			if err == nil {
-				record, err := client.GetRecord(ctx, &rcpb.GetRecordRequest{InstanceId: records[0].GetInstanceId})
+		td := time.Unix(sale.GetDatePosted(), 0)
+		if err == nil {
+			if sale.GetSalePrice() <= 500 && time.Since(td) > time.Hour*24*7 {
+				records, err := client.QueryRecords(ctx, &rcpb.QueryRecordsRequest{Query: &rcpb.QueryRecordsRequest_ReleaseId{sale.GetId()}})
 				if err == nil {
-					lines = append(lines, fmt.Sprintf("%v - %v.", sale.GetId(), record.GetRecord().GetRelease().GetTitle()))
+					record, err := client.GetRecord(ctx, &rcpb.GetRecordRequest{InstanceId: records.GetInstanceIds()[0]})
+					if err == nil {
+						lines = append(lines, fmt.Sprintf("%v - %v.", sale.GetId(), record.GetRecord().GetRelease().GetTitle()))
+					}
 				}
 			}
 		}
