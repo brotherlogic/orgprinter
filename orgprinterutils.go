@@ -25,7 +25,13 @@ func (s *Server) runSalePrint(ctx context.Context) error {
 	lines := []string{"For Sale:"}
 	for _, sale := range sales.GetItems() {
 		if sale.GetSalePrice() <= 5 {
-			lines = append(lines, fmt.Sprintf("%v.", sale.GetId()))
+			records, err := client.QueryRecords(ctx, &rcpb.QueryRecordsRequest{Query: &rcpb.QueryRecordsRequest_ReleaseId{sale.GetId()}})
+			if err == nil {
+				record, err := client.GetRecord(ctx, &rcpb.GetRecordRequest{InstanceId: records[0].GetInstanceId})
+				if err == nil {
+					lines = append(lines, fmt.Sprintf("%v - %v.", sale.GetId(), record.GetRecord().GetRelease().GetTitle()))
+				}
+			}
 		}
 	}
 
