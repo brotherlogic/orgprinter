@@ -6,7 +6,7 @@ import (
 
 	"golang.org/x/net/context"
 
-	gdpb "github.com/brotherlogic/godiscogs"
+	gdpb "github.com/brotherlogic/godiscogs/proto"
 	rcpb "github.com/brotherlogic/recordcollection/proto"
 	ropb "github.com/brotherlogic/recordsorganiser/proto"
 	rpb "github.com/brotherlogic/reminders/proto"
@@ -25,8 +25,9 @@ func (t *testOrg) listLocations(ctx context.Context) ([]*ropb.Location, error) {
 	}
 	return []*ropb.Location{
 		&ropb.Location{
-			Name:  "Records",
-			Slots: 2,
+			Name:   "Records",
+			Slots:  2,
+			InPlay: ropb.Location_IN_PLAY,
 		},
 	}, nil
 }

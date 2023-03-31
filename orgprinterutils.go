@@ -11,14 +11,7 @@ import (
 )
 
 func (s *Server) runSalePrint(ctx context.Context) error {
-	conn, err := s.FDialServer(ctx, "recordcollection")
-	if err != nil {
-		return err
-	}
-	defer conn.Close()
-
-	client := rcpb.NewRecordCollectionServiceClient(conn)
-	sales, err := client.GetInventory(ctx, &rcpb.GetInventoryRequest{})
+	sales, err := s.rcclient.GetInventory(ctx, &rcpb.GetInventoryRequest{})
 	if err != nil {
 		return err
 	}
@@ -28,9 +21,9 @@ func (s *Server) runSalePrint(ctx context.Context) error {
 		td := time.Unix(sale.GetDatePosted(), 0)
 		if err == nil {
 			if sale.GetSalePrice() <= 500 && time.Since(td) > time.Hour*24*7 {
-				records, err := client.QueryRecords(ctx, &rcpb.QueryRecordsRequest{Query: &rcpb.QueryRecordsRequest_ReleaseId{sale.GetId()}})
+				records, err := s.rcclient.QueryRecords(ctx, &rcpb.QueryRecordsRequest{Query: &rcpb.QueryRecordsRequest_ReleaseId{sale.GetId()}})
 				if err == nil {
-					record, err := client.GetRecord(ctx, &rcpb.GetRecordRequest{InstanceId: records.GetInstanceIds()[0]})
+					record, err := s.rcclient.GetRecord(ctx, &rcpb.GetRecordRequest{InstanceId: records.GetInstanceIds()[0]})
 					if err == nil {
 						lines = append(lines, fmt.Sprintf("%v - %v.", sale.GetId(), record.GetRecord().GetRelease().GetTitle()))
 					}

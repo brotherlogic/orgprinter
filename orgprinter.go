@@ -10,6 +10,8 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 
+	recordcollection_client "github.com/brotherlogic/recordcollection/client"
+
 	pbg "github.com/brotherlogic/goserver/proto"
 	ppb "github.com/brotherlogic/printer/proto"
 	rcpb "github.com/brotherlogic/recordcollection/proto"
@@ -78,6 +80,7 @@ type Server struct {
 	org       org
 	runprint  bool
 	lastprint []string
+	rcclient  recordcollection_client.RecordCollectionClient
 }
 
 // Init builds the server
