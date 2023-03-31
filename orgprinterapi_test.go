@@ -25,8 +25,9 @@ func (t *testOrg) listLocations(ctx context.Context) ([]*ropb.Location, error) {
 	}
 	return []*ropb.Location{
 		&ropb.Location{
-			Name:  "Records",
-			Slots: 2,
+			Name:   "Records",
+			Slots:  2,
+			InPlay: ropb.Location_IN_PLAY,
 		},
 	}, nil
 }
