@@ -7,7 +7,7 @@ require (
 	github.com/brotherlogic/goserver v0.0.0-20230330215506-65bad61eb180
 	github.com/brotherlogic/lock v0.0.0-20230330232815-a0e28d7558ac // indirect
 	github.com/brotherlogic/printer v0.0.0-20230108022149-cde29d1d72c7
-	github.com/brotherlogic/recordcollection v0.0.0-20230326235728-d5b5810327ff
+	github.com/brotherlogic/recordcollection v0.0.0-20230331213550-cc32f57ab127
 	github.com/brotherlogic/recordsorganiser v0.0.0-20230325163059-f9927bb33005
 	github.com/brotherlogic/reminders v0.0.0-20230128041641-f11d5e166154
 	github.com/golang/protobuf v1.5.3

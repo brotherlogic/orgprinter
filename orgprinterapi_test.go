@@ -6,7 +6,7 @@ import (
 
 	"golang.org/x/net/context"
 
-	gdpb "github.com/brotherlogic/godiscogs"
+	gdpb "github.com/brotherlogic/godiscogs/proto"
 	rcpb "github.com/brotherlogic/recordcollection/proto"
 	ropb "github.com/brotherlogic/recordsorganiser/proto"
 	rpb "github.com/brotherlogic/reminders/proto"
