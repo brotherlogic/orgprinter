@@ -3,7 +3,7 @@ module github.com/brotherlogic/orgprinter
 go 1.16
 
 require (
-	github.com/brotherlogic/buildserver v0.0.0-20230426044644-a26b546e28ef // indirect
+	github.com/brotherlogic/dstore v0.0.0-20230429013535-96fbfd7b9417 // indirect
 	github.com/brotherlogic/godiscogs v0.0.0-20230401025107-56c4acd43937
 	github.com/brotherlogic/goserver v0.0.0-20230330215506-65bad61eb180
 	github.com/brotherlogic/printer v0.0.0-20230108022149-cde29d1d72c7
@@ -11,7 +11,6 @@ require (
 	github.com/brotherlogic/recordsorganiser v0.0.0-20230423005010-b985fb82d87c
 	github.com/brotherlogic/reminders v0.0.0-20230128041641-f11d5e166154
 	github.com/golang/protobuf v1.5.3
-	go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc v0.41.0 // indirect
 	golang.org/x/net v0.9.0
 	google.golang.org/grpc v1.54.0
 	google.golang.org/protobuf v1.30.0
