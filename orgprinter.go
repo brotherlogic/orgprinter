@@ -90,6 +90,7 @@ func Init() *Server {
 		runprint: true,
 	}
 	s.org = &porg{dial: s.FDialServer}
+	s.rcclient = recordcollection_client.RecordCollectionClient{Gs: s.GoServer}
 	return s
 }
 
