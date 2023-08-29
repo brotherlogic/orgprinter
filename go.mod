@@ -5,7 +5,7 @@ go 1.16
 require (
 	github.com/brotherlogic/godiscogs v0.0.0-20230811151532-c0cd0f5b80c6
 	github.com/brotherlogic/goserver v0.0.0-20230726200050-779ae6811580
-	github.com/brotherlogic/lock v0.0.0-20230829042128-86a9d68f0f39 // indirect
+	github.com/brotherlogic/lock v0.0.0-20230829102435-c24bfc4e8a8e // indirect
 	github.com/brotherlogic/printer v0.0.0-20230826011304-1046507b860a
 	github.com/brotherlogic/recordcollection v0.0.0-20230824004302-0e43b51c34e3
 	github.com/brotherlogic/recordsorganiser v0.0.0-20230828210119-02613f79aead
