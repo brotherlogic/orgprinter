@@ -11,7 +11,7 @@ require (
 	github.com/brotherlogic/recordsorganiser v0.0.0-20230904054646-cf3681463d4d
 	github.com/brotherlogic/reminders v0.0.0-20230128041641-f11d5e166154
 	github.com/golang/protobuf v1.5.3
-	golang.org/x/net v0.14.0
+	golang.org/x/net v0.15.0
 	google.golang.org/grpc v1.57.0
 	google.golang.org/protobuf v1.31.0
 )
