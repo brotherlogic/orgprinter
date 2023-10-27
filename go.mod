@@ -3,7 +3,7 @@ module github.com/brotherlogic/orgprinter
 go 1.16
 
 require (
-	github.com/brotherlogic/discovery v0.0.0-20231027110234-ab57292a6596 // indirect
+	github.com/brotherlogic/datastore v0.0.0-20231027113238-739ae8398dbf // indirect
 	github.com/brotherlogic/godiscogs v0.0.0-20230922000443-fb73651e941c
 	github.com/brotherlogic/goserver v0.0.0-20230726200050-779ae6811580
 	github.com/brotherlogic/printer v0.0.0-20231021093647-f906bf7edf10
