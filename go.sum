@@ -2245,8 +2245,9 @@ github.com/brotherlogic/gobuildslave v0.0.0-20231118063758-4de111d4fbbf/go.mod h
 github.com/brotherlogic/gobuildslave v0.0.0-20231118091228-c98f3524250d/go.mod h1:P/k3tlGIVGn4vsog9frGrje+Ef8f2qlNz3VspVWuWcY=
 github.com/brotherlogic/gobuildslave v0.0.0-20231118100755-defa04e69436/go.mod h1:q7LyM2rWYulqqW/63waLqoNZqwDrTShhDQnaGqsASNI=
 github.com/brotherlogic/gobuildslave v0.0.0-20231118115219-53e2dbdb86d6/go.mod h1:VPhm6vOdSSON4/XrgFXbvq0/Rl+uUeDmNPFcVYxQi3w=
-github.com/brotherlogic/gobuildslave v0.0.0-20231118131316-bc7fb9f6fe0e h1:koYNUuYibWIh5knM+IkYhYnzj4H0HC7l8nStgq+w0xM=
 github.com/brotherlogic/gobuildslave v0.0.0-20231118131316-bc7fb9f6fe0e/go.mod h1:cxR3DZouj7JmExkLApwi8ILAG/amtlcrdAncP1Er4Yo=
+github.com/brotherlogic/gobuildslave v0.0.0-20231118142502-a5ddb1e1bccc h1:CsoMOyrWoGP/3UtYhKNwPTBfYRc8LMLZv2DRDYgLUG4=
+github.com/brotherlogic/gobuildslave v0.0.0-20231118142502-a5ddb1e1bccc/go.mod h1:M4ebjIWaT6hSYYWW83Pbutcq99B54XW9tKH3k5aBzYk=
 github.com/brotherlogic/godiscogs v0.0.0-20201012230422-e6d22566e955/go.mod h1:n/6nBOsxU6shAcHwC8L557pGTmKwfdUx/zueje86vCE=
 github.com/brotherlogic/godiscogs v0.0.0-20210110190906-0bfce639dbb9/go.mod h1:n/6nBOsxU6shAcHwC8L557pGTmKwfdUx/zueje86vCE=
 github.com/brotherlogic/godiscogs v0.0.0-20210518132442-05fcf2d616b0/go.mod h1:n/6nBOsxU6shAcHwC8L557pGTmKwfdUx/zueje86vCE=
@@ -2794,13 +2795,14 @@ github.com/brotherlogic/printer v0.0.0-20230902015757-06a1dffbec95/go.mod h1:qgj
 github.com/brotherlogic/printer v0.0.0-20230909021048-1a551ed93ce8/go.mod h1:JEdPuRi8zNFLWuvaJXqLE4sFJkTFfiAGnx6fAEqtePM=
 github.com/brotherlogic/printer v0.0.0-20230918222204-fd599ae5b5ad/go.mod h1:2axzpY7FPXOtMrQXV39mhspks59bNvXqQ1flh/6K9fQ=
 github.com/brotherlogic/printer v0.0.0-20230927053844-0171ce0db2b2/go.mod h1:BZAFleN1AIoz03BByT1dp+V4vi/K8Fc26esWHTw2ZIs=
-github.com/brotherlogic/printer v0.0.0-20231111122956-d5eb68fb8486 h1:bE7iWeu8jGep8oQotmJKts/mBXZ0NwUjSXZ1AkbzHug=
-github.com/brotherlogic/printer v0.0.0-20231111122956-d5eb68fb8486/go.mod h1:iBCTvKgRQk9RjqDV1zS3EPcS3Je4sSIwV7AT+YnpPbw=
+github.com/brotherlogic/printer v0.0.0-20231118142419-6c9ac1a08dac h1:MEP8NtY9xiKTBmH9W3EZA8QXEB36yPpGp4bfb2podXM=
+github.com/brotherlogic/printer v0.0.0-20231118142419-6c9ac1a08dac/go.mod h1:KyQssFBauTczUFg4EFCAol5j9TgOOLTSnza21/8m+M0=
 github.com/brotherlogic/printqueue v0.27.0/go.mod h1:GvYVDTeHOShsl4I3PxZVAvylg04BMGQgUCVwJgRG/lU=
 github.com/brotherlogic/printqueue v0.28.0/go.mod h1:GvYVDTeHOShsl4I3PxZVAvylg04BMGQgUCVwJgRG/lU=
 github.com/brotherlogic/printqueue v0.29.0/go.mod h1:GvYVDTeHOShsl4I3PxZVAvylg04BMGQgUCVwJgRG/lU=
 github.com/brotherlogic/printqueue v0.35.0/go.mod h1:GvYVDTeHOShsl4I3PxZVAvylg04BMGQgUCVwJgRG/lU=
 github.com/brotherlogic/printqueue v0.40.0/go.mod h1:ztVRz4qNRQO3cniDR30GnwP/7gMRBnX9xwiJcLWCSnQ=
+github.com/brotherlogic/printqueue v0.41.0/go.mod h1:ztVRz4qNRQO3cniDR30GnwP/7gMRBnX9xwiJcLWCSnQ=
 github.com/brotherlogic/proxy v0.0.0-20201017172302-a8d9180667fa/go.mod h1:OeUyxUOUvW2EBiVLgjfRp9/7aWEofb6mnzCSFrd9xYE=
 github.com/brotherlogic/proxy v0.0.0-20211113222556-d6986396311e/go.mod h1:WdCgLYvTtDyXtqt/ludN/Gl7B0RsYr5hSlfd8EuaSXU=
 github.com/brotherlogic/proxy v0.0.0-20220306230204-551d2f4b1b0f/go.mod h1:Jd9DvlyQEtRtBRsCdP/vesrzDfJGZj/7e9iF8UF6QL4=
@@ -4082,6 +4084,7 @@ github.com/brotherlogic/versiontracker v0.0.0-20231118054138-31b46fe601cd/go.mod
 github.com/brotherlogic/versiontracker v0.0.0-20231118081656-3c5580043c82/go.mod h1:sXkyF49EdeEIir9P50rkVfVPNZqfXceD2Z/VelM+qvg=
 github.com/brotherlogic/versiontracker v0.0.0-20231118095432-7246fcbbac57/go.mod h1:QNBlniELPStv6ji154bQx4A/Cur653nn6FeKKBcN4/c=
 github.com/brotherlogic/versiontracker v0.0.0-20231118125321-f5354982a003/go.mod h1:vBywbWMR3dpFJ6ZNgyeFiE74vv5USvUgtr5QjrRz5QY=
+github.com/brotherlogic/versiontracker v0.0.0-20231118135330-2e0572dfcfd2/go.mod h1:hWhGM9GgF+7xRfAH00ndBL1rVqIM5eQHykr40ctu/vc=
 github.com/bsm/ginkgo/v2 v2.5.0/go.mod h1:AiKlXPm7ItEHNc/2+OkrNG4E0ITzojb9/xWzvQ9XZ9w=
 github.com/bsm/gomega v1.20.0/go.mod h1:JifAceMQ4crZIWYUKrlGcmbN3bqHogVTADMD2ATsbwk=
 github.com/buger/jsonparser v1.1.1/go.mod h1:6RYKKt7H4d4+iWqouImQ9R2FZql3VbhNgx27UK13J/0=

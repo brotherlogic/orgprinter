@@ -3,9 +3,10 @@ module github.com/brotherlogic/orgprinter
 go 1.16
 
 require (
+	github.com/brotherlogic/gobuildslave v0.0.0-20231118142502-a5ddb1e1bccc // indirect
 	github.com/brotherlogic/godiscogs v0.0.0-20230922000443-fb73651e941c
 	github.com/brotherlogic/goserver v0.0.0-20230726200050-779ae6811580
-	github.com/brotherlogic/printer v0.0.0-20231111122956-d5eb68fb8486
+	github.com/brotherlogic/printer v0.0.0-20231118142419-6c9ac1a08dac
 	github.com/brotherlogic/recordcollection v0.0.0-20231114064337-5682ee245cd8
 	github.com/brotherlogic/recordsorganiser v0.0.0-20231118135241-a4587ed1d1a2
 	github.com/brotherlogic/reminders v0.0.0-20230128041641-f11d5e166154
