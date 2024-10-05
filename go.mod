@@ -8,9 +8,9 @@ require (
 	github.com/brotherlogic/godiscogs v0.0.0-20240823195726-9a8d322e6898
 	github.com/brotherlogic/goserver v0.0.0-20240826215223-fccbac46b3d4
 	github.com/brotherlogic/printer v0.0.0-20241002080529-c460f33ca50c
-	github.com/brotherlogic/recordcollection v0.0.0-20241004233148-60a2644087d5
-	github.com/brotherlogic/recordsorganiser v0.0.0-20240928002405-17eeaf3494e9
-	github.com/brotherlogic/reminders v0.0.0-20241004233728-acbe196facd0
+	github.com/brotherlogic/recordcollection v0.0.0-20241005003244-848176ce2e04
+	github.com/brotherlogic/recordsorganiser v0.0.0-20241005003732-e793512b7dd0
+	github.com/brotherlogic/reminders v0.0.0-20241005003756-7411675b79b2
 	github.com/golang/protobuf v1.5.4
 	golang.org/x/net v0.30.0
 	google.golang.org/grpc v1.67.1
