@@ -7,7 +7,7 @@ require (
 	github.com/brotherlogic/goserver v0.0.0-20240826215223-fccbac46b3d4
 	github.com/brotherlogic/printer v0.0.0-20241113104714-f0284b972b47
 	github.com/brotherlogic/recordcollection v0.0.0-20241211050319-c5d6cfad7bbb
-	github.com/brotherlogic/recordsorganiser v0.0.0-20241217011946-2fdd777675a9
+	github.com/brotherlogic/recordsorganiser v0.0.0-20241217015056-81b1fb604bb8
 	github.com/brotherlogic/reminders v0.0.0-20241217013134-04b224f98e84
 	github.com/golang/protobuf v1.5.4
 	golang.org/x/net v0.32.0

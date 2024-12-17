@@ -30,8 +30,8 @@ github.com/brotherlogic/printer v0.0.0-20241113104714-f0284b972b47 h1:WTkqJxckGv
 github.com/brotherlogic/printer v0.0.0-20241113104714-f0284b972b47/go.mod h1:wIDNMff7byEVWgmDc4zCh4yuOlutA9jt3pDTv59hFJ0=
 github.com/brotherlogic/recordcollection v0.0.0-20241211050319-c5d6cfad7bbb h1:lxoB39E2JRYY06/lXQ97Uuet6/2k07gVvGe9VqWYN4I=
 github.com/brotherlogic/recordcollection v0.0.0-20241211050319-c5d6cfad7bbb/go.mod h1:+Imbzk2dfjNwTDAx506PHHJJV88p7iOEMR9e98ShTMQ=
-github.com/brotherlogic/recordsorganiser v0.0.0-20241217011946-2fdd777675a9 h1:SXTujrnM0Uzeo2Qn3dYSZL27c5bFshLx3dqKc87uWfY=
-github.com/brotherlogic/recordsorganiser v0.0.0-20241217011946-2fdd777675a9/go.mod h1:/5pKSPQumnYgB5ATMyHU48wufAs1dZsM3eOI1YM3inA=
+github.com/brotherlogic/recordsorganiser v0.0.0-20241217015056-81b1fb604bb8 h1:cnzXGOdReWJJ+zTmmo/BikfPjQmwQ3n5d4y/Q0Sz7mY=
+github.com/brotherlogic/recordsorganiser v0.0.0-20241217015056-81b1fb604bb8/go.mod h1:tkj3z6onwv2tx1xZlfZRESnAfQwmEF8NyLlvHmWTSYc=
 github.com/brotherlogic/reminders v0.0.0-20241217013134-04b224f98e84 h1:Hj76N1x1n+gK2c7GGzrIJJQWsMe7EUyy4d8Rcib2YKo=
 github.com/brotherlogic/reminders v0.0.0-20241217013134-04b224f98e84/go.mod h1:kNUoPW5+sBzp9WvFuJbUq5EJpDv5/EBACnM42DX0tJE=
 github.com/brotherlogic/versionserver v0.0.0-20221025154054-c9bcd41be2f2 h1:YjFE4Sa+wwbl4yJwJaMQVeA4CMzLIDbbIuSMdsEp5/w=
