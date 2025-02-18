@@ -7,8 +7,8 @@ require (
 	github.com/brotherlogic/goserver v0.0.0-20250123145056-95c6fbb2310a
 	github.com/brotherlogic/printer v0.0.0-20250204221338-4aab7ca70cbc
 	github.com/brotherlogic/recordcollection v0.0.0-20250212043939-5a5bc9db09d7
-	github.com/brotherlogic/recordsorganiser v0.0.0-20250217220556-fc6a923b31b0
-	github.com/brotherlogic/reminders v0.0.0-20250217220829-f22edae93755
+	github.com/brotherlogic/recordsorganiser v0.0.0-20250217230113-1c9464dbc2b3
+	github.com/brotherlogic/reminders v0.0.0-20250217230410-3c12367710dd
 	github.com/golang/protobuf v1.5.4
 	golang.org/x/net v0.35.0
 	google.golang.org/grpc v1.70.0
@@ -20,13 +20,13 @@ require (
 	github.com/brotherlogic/buildserver v0.0.0-20250217220510-db1b61ec10f9 // indirect
 	github.com/brotherlogic/datastore v0.0.0-20250113225754-a9cab19c721e // indirect
 	github.com/brotherlogic/discovery v0.0.0-20241109204028-02908558af09 // indirect
-	github.com/brotherlogic/dstore v0.0.0-20250217223032-34571918621f // indirect
-	github.com/brotherlogic/githubcard v0.0.0-20250217221225-0279e911f125 // indirect
+	github.com/brotherlogic/dstore v0.0.0-20250217233129-d5d611a1750a // indirect
+	github.com/brotherlogic/githubcard v0.0.0-20250217230856-b16f7b3ffce1 // indirect
 	github.com/brotherlogic/githubridge v0.2848.0 // indirect
-	github.com/brotherlogic/gobuildslave v0.0.0-20250217223043-6fd2adca2528 // indirect
+	github.com/brotherlogic/gobuildslave v0.0.0-20250217233134-69ab56057eba // indirect
 	github.com/brotherlogic/keystore v0.0.0-20240508161349-814b3200b126 // indirect
-	github.com/brotherlogic/lock v0.0.0-20250217220946-cf9bef8989e5 // indirect
-	github.com/brotherlogic/logging v0.0.0-20250217223105-e2e77d9d3140 // indirect
+	github.com/brotherlogic/lock v0.0.0-20250217230639-fb1f7cdb6279 // indirect
+	github.com/brotherlogic/logging v0.0.0-20250217231557-075d9acccccd // indirect
 	github.com/brotherlogic/monitor v0.0.0-20221025152653-c10877c5f9e6 // indirect
 	github.com/brotherlogic/versionserver v0.0.0-20221025154054-c9bcd41be2f2 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
