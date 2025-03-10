@@ -1,7 +1,7 @@
 github.com/beorn7/perks v1.0.1 h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM=
 github.com/beorn7/perks v1.0.1/go.mod h1:G2ZrVWU2WbWT9wwq4/hrbKbnv/1ERSJQ0ibhJ6rlkpw=
-github.com/brotherlogic/buildserver v0.0.0-20250310005953-3fd85bd11a55 h1:GD0NLKUuQIAXLGCyoyHomrsZhNvtB73imUxgP5dg5c0=
-github.com/brotherlogic/buildserver v0.0.0-20250310005953-3fd85bd11a55/go.mod h1:kvfIoCbkwldaR3cvaE2SInXZrgAqsNMrWYR34u7pn2c=
+github.com/brotherlogic/buildserver v0.0.0-20250310020547-6eee322e15e4 h1:YBXXZ5Y7Cu+w+u/MNvEZJLpsb7CUrsnv4jkKwxi1qhk=
+github.com/brotherlogic/buildserver v0.0.0-20250310020547-6eee322e15e4/go.mod h1:DJd2N67PiXPK0s7uWZZrXdUyG8rr9O4D4ihu53oT818=
 github.com/brotherlogic/datastore v0.0.0-20250113225754-a9cab19c721e h1:+ObStHAWAC6w1QHdJvjJhiGj23SZ4vvrAvKbslMsLXw=
 github.com/brotherlogic/datastore v0.0.0-20250113225754-a9cab19c721e/go.mod h1:9q9KdpUQOEqifh2D1mDctq0de7pzh86xydybPu+l9tk=
 github.com/brotherlogic/discovery v0.0.0-20241109204028-02908558af09 h1:/G6RM6m/hLY/LbVw2mNcbeUxms5zNE2c0F72Z8ZI8HU=
@@ -30,8 +30,8 @@ github.com/brotherlogic/printer v0.0.0-20250310013325-8ea46473a530 h1:LkGK9X0S+o
 github.com/brotherlogic/printer v0.0.0-20250310013325-8ea46473a530/go.mod h1:23xL7qOAwrnv2Yq7I7b6/4x31XJG7q7o11SPWOGHs/k=
 github.com/brotherlogic/recordcollection v0.0.0-20250227174213-ce20ec909d87 h1:BX4IrQD+baBcQm7j8zTA+da+Rl3pcUy9FBKHk9IIwJs=
 github.com/brotherlogic/recordcollection v0.0.0-20250227174213-ce20ec909d87/go.mod h1:A+p6+E94GRc22lQAxAYnJk5Zp5BbtXhmhNCbVx7dfvo=
-github.com/brotherlogic/recordsorganiser v0.0.0-20250309235118-2fbabc231a76 h1:n3PC+QZw5/VsEBKYE92VSzDBKOTxpy1CK5+nn7++DMY=
-github.com/brotherlogic/recordsorganiser v0.0.0-20250309235118-2fbabc231a76/go.mod h1:ZtjThF6UCcdcsvqtvsHLOHUxoIEdnKB5kk+HYLKs3KU=
+github.com/brotherlogic/recordsorganiser v0.0.0-20250310020350-5bcbc0098326 h1:RJya9RdO5LhAjkR4aKHAWPc8A4qn6R4WgRRi+oS4HWM=
+github.com/brotherlogic/recordsorganiser v0.0.0-20250310020350-5bcbc0098326/go.mod h1:/Hs1VMz4B4fj/wjIUwSBRr8HIR6dTzMXnvTPBkKoVVE=
 github.com/brotherlogic/reminders v0.0.0-20250310010108-b904c1a32351 h1:cb3bZGC6eMtQnc+4LqXT1hrhJmZLgSA8PLIFHGFy8no=
 github.com/brotherlogic/reminders v0.0.0-20250310010108-b904c1a32351/go.mod h1:ocf+6SF8EQkjkNc6GmkEQSnNUeCisIyftRgKK/azCPE=
 github.com/brotherlogic/versionserver v0.0.0-20221025154054-c9bcd41be2f2 h1:YjFE4Sa+wwbl4yJwJaMQVeA4CMzLIDbbIuSMdsEp5/w=
