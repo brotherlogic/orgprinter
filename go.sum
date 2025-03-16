@@ -32,8 +32,8 @@ github.com/brotherlogic/recordcollection v0.0.0-20250227174213-ce20ec909d87 h1:B
 github.com/brotherlogic/recordcollection v0.0.0-20250227174213-ce20ec909d87/go.mod h1:A+p6+E94GRc22lQAxAYnJk5Zp5BbtXhmhNCbVx7dfvo=
 github.com/brotherlogic/recordsorganiser v0.0.0-20250316125744-4bd4d0e97afb h1:rinePD0EhHYa4dX15Q+FPtpfhDzgsmfBfSVmlg/HDnA=
 github.com/brotherlogic/recordsorganiser v0.0.0-20250316125744-4bd4d0e97afb/go.mod h1:ZRBC31by80tf7fpxItsZKzk03qkuGKPSIKGLr/UkyOs=
-github.com/brotherlogic/reminders v0.0.0-20250316112835-7c6972471f5f h1:st2zEquIm798ZfNnqU9y9T+n3ekd7VKyQxZZIiIJF9M=
-github.com/brotherlogic/reminders v0.0.0-20250316112835-7c6972471f5f/go.mod h1:X7ky2mxPDGUy/z338yTp6D+e8M9JZ2CtW7mwWXuVock=
+github.com/brotherlogic/reminders v0.0.0-20250316130218-9902452d29c7 h1:yS8pOaSsAqa7/0LtDT36L3XqYhqZBtdAf/XSJXcjMIM=
+github.com/brotherlogic/reminders v0.0.0-20250316130218-9902452d29c7/go.mod h1:sle3bgweX+mF1ocydSZGEMt8irjA1UFvNRlIiboAClI=
 github.com/brotherlogic/versionserver v0.0.0-20221025154054-c9bcd41be2f2 h1:YjFE4Sa+wwbl4yJwJaMQVeA4CMzLIDbbIuSMdsEp5/w=
 github.com/brotherlogic/versionserver v0.0.0-20221025154054-c9bcd41be2f2/go.mod h1:ODrbMDhG+yOp2vie9vE4oaKsKhILDralZMr7PJ4HrJY=
 github.com/cespare/xxhash/v2 v2.3.0 h1:UL815xU9SqsFlibzuggzjXhog7bL6oX9BbNZnL2UFvs=
