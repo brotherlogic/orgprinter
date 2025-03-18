@@ -5,7 +5,7 @@ go 1.23.2
 require (
 	github.com/brotherlogic/godiscogs v0.0.0-20250131163651-1e34c776a68e
 	github.com/brotherlogic/goserver v0.0.0-20250123145056-95c6fbb2310a
-	github.com/brotherlogic/printer v0.0.0-20250318133545-f10e5300b136
+	github.com/brotherlogic/printer v0.0.0-20250318143619-9e823335dd29
 	github.com/brotherlogic/recordcollection v0.0.0-20250227174213-ce20ec909d87
 	github.com/brotherlogic/recordsorganiser v0.0.0-20250318141722-91c8da20ffa0
 	github.com/brotherlogic/reminders v0.0.0-20250318141817-8ac071f5dae1
@@ -17,7 +17,7 @@ require (
 
 require (
 	github.com/beorn7/perks v1.0.1 // indirect
-	github.com/brotherlogic/buildserver v0.0.0-20250318142058-b07161596914 // indirect
+	github.com/brotherlogic/buildserver v0.0.0-20250318143304-2a2b9b39d5dc // indirect
 	github.com/brotherlogic/datastore v0.0.0-20250313015544-917b63bdd6ff // indirect
 	github.com/brotherlogic/discovery v0.0.0-20241109204028-02908558af09 // indirect
 	github.com/brotherlogic/dstore v0.0.0-20250318133840-d16281ee81e5 // indirect
