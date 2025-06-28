@@ -5,7 +5,7 @@ go 1.24.4
 require (
 	github.com/brotherlogic/godiscogs v0.0.0-20250429182651-404c7473edf8
 	github.com/brotherlogic/goserver v0.0.0-20250608182006-4ace595931a5
-	github.com/brotherlogic/printer v0.0.0-20250627220912-010619a62fcf
+	github.com/brotherlogic/printer v0.0.0-20250628001102-aa3b2e6b7583
 	github.com/brotherlogic/recordcollection v0.0.0-20250625165631-0ab7d5811bd2
 	github.com/brotherlogic/recordsorganiser v0.0.0-20250522071341-e94f0b2c7f87
 	github.com/brotherlogic/reminders v0.0.0-20250627223731-9889305acb2e
