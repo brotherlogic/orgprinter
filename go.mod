@@ -8,7 +8,7 @@ require (
 	github.com/brotherlogic/printer v0.0.0-20250628101452-a3640858e89c
 	github.com/brotherlogic/recordcollection v0.0.0-20250625165631-0ab7d5811bd2
 	github.com/brotherlogic/recordsorganiser v0.0.0-20250522071341-e94f0b2c7f87
-	github.com/brotherlogic/reminders v0.0.0-20250628113553-54246b29ad0b
+	github.com/brotherlogic/reminders v0.0.0-20250628114341-b134bd81ef73
 	github.com/golang/protobuf v1.5.4
 	golang.org/x/net v0.41.0
 	google.golang.org/grpc v1.73.0
